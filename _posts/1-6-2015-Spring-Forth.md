@@ -5,8 +5,6 @@ category: general
 title: Welcome one, welcome all!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Welcome, internet denizens to the grand opening of my GitHub blog! This was an absolute pain to set up, but it looks pretty good, so I'm perfectly fine with the effort investment.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+So what's gonna be in this blog? This blog will host the intrepid programming adventures I undergo, documenting the struggles and strife of each. Immense pain and intensive problem-solving within...
