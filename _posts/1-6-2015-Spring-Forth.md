@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+category: general
 title: Welcome one, welcome all!
 ---
 
