@@ -13,11 +13,17 @@
 /* BASE RULES */
 /**************/
 
+* {
+	margin: 0;
+}
+
 html {
+  height: 100%;
   font-size: 100%;
 }
 
 body {
+  height: 100%;
   background: #111;
   font: 18px/1.4 $helvetica;
   color: #ddd;
@@ -280,7 +286,7 @@ nav {
 	}
   }
 }
-
+/*
 .wrapper-footer {
   margin-top: 40px;
   border-top: 2px solid #333;
@@ -288,8 +294,22 @@ nav {
   background-color: #222;
 }
 
-footer {
+.footer {
   padding: 6px 0 0 0;
+}*/
+.wrapper-footer {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  background-color: #222;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:52px;
+  width:100%;
+}
+.footer {
+  margin: 5px 0 0 0;
+  height: 50;
   text-align: center;
 }
 
@@ -297,3 +317,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+ 
