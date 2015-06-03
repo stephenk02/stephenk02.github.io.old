@@ -1,8 +1,9 @@
 ---
 layout: post
 comments: true
-category: general
+category: blog
 title: Welcome one, welcome all!
+tags: post
 ---
 
 Welcome, internet denizens to the grand opening of my GitHub blog! This was an absolute pain to set up, but it looks pretty good, so I'm perfectly fine with the effort investment.
