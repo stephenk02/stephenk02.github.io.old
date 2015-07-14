@@ -3,17 +3,62 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.categories.blog %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-	  <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+  {% for post in site.categories.general limit:3 %}
+    {% if post.title %}
+      <article class="post">
+      
+        <table style="width:100%">
+          <tr>
+            <th align="left"><h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1></th> 
+   	        <th align="right"><p class="category">
+		    <a href="{{ site.baseurl }}blogs/{{ post.category }}">General</a>
+	        </p></th>
+          </tr>
+        </table>
+        <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+      
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endif %}
+  {% endfor %}
+  {% for cat in site.categories %}
+    {% for posts in cat %}
+      {% for post in posts limit:3 %}
+		{% if post.title %}
+		{% if post.category != 'general' %}
+        <article class="post">
+        
+          <table style="width:100%">
+            <tr>
+              <th align="left"><h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1></th> 
+	    	  <th align="right"><p class="category">
+				{% assign cleanName = 'General' %}
+		        {% if post.category == 'gmodparty' %}
+				  {% assign cleanName = 'GMod Party' %}
+		        {% elsif post.category == 'earthscape' %}
+				  {% assign cleanName = 'EarthScape' %}
+				{% endif %}
+				<a href="{{ site.baseurl }}blogs/{{ post.category }}">{{cleanName}}</a>
+			  </p></th>
+	    	</tr>
+          </table>
+	      <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
+        
+          <div class="entry">
+            {{ post.excerpt }}
+          </div>
+        
+	      <span class="disqus-comment-count" data-disqus-url="{{site.baseurl}}{{ post.url }}"> <!-- Count will be inserted here --> </span>
+          <a href="{{ site.baseurl }}{{ post.url }}" data-disqus-identifier="{{post.url}}_identifier" class="read-more">Read More</a>
+        </article>
+		{% endif %}
+		{% endif %}
+      {% endfor %}
+    {% endfor %}
   {% endfor %}
 </div>
+
+{% include disqus_count.html %}

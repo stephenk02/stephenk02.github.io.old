@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: 3Pill's Coding Den
+name: 3Pills' Coding Den
 
 # Short bio or description (displayed in the header)
 description: Semicolons contained within.
@@ -30,8 +30,18 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UCVn2zVEofBtpqMn4meyBKTQ
   googleplus: # anything in your profile username that comes after plus.google.com/
+  
+blogs:
+  - general
+  - gmodparty
+  
+  
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
-
+  
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
 disqus: 3pills

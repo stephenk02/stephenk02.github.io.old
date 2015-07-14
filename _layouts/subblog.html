@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="subblog">
+  <h1 class="maintitle">{{ page.title }}</h1>
+    {{ content }}
+  <hr>
+  
+  {% for post in site.categories[page.subblog] %}
+    <article class="post">
+
+	  <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+	  <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
+
+      <p>{{ post.excerpt }}</p>
+
+	  <span class="disqus-comment-count" data-disqus-url="3pills.github.io/{{ post.url }}"> <!-- Count will be inserted here --> </span>
+      <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}_identifier" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+  
+  {% include disqus.html %}
+</article>

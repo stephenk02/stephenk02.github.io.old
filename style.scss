@@ -54,6 +54,11 @@ body {
   padding: 0 0 0 20;
 }
 
+.maintitle {
+  font-size: 24px;
+  color: #fb6;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: #ec8;
@@ -90,8 +95,7 @@ h4 {
 }
 
 p {
-  margin: 5px 0px;
-  padding: 0px 0px 10px 10px;
+  padding: 0px 10px 0px 10px;
   font-size: 14px;
 }
 
@@ -152,7 +156,33 @@ img {
   font-size: 14px;
   font-style: italic;
   color: #888;
+  padding: 0 10px 5px 10px;
+}
+
+p.category {
+  font-size: 14px;
   padding: 0px 10px;
+  
+  a {
+    color: #777;
+	&:hover, &:active {
+	  color: #9af;
+	}
+  }
+}
+
+.subblog > p {
+  padding: 0 10px 10px 10px;
+}
+
+.page {
+  .text_container:last-of-type p:last-of-type {
+    margin-bottom: 15px;
+  } 
+}
+
+.text_container {
+  padding: 5px 10px 10px 10px;
 }
 
 // Specify the color of the selection
@@ -277,13 +307,20 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid #a85;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #444;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 10px;
   border-bottom: none;
+}
+
+.projects > .post {
+  td {
+    padding-top: 10px;
+  }
 }
 
 .post {
@@ -300,14 +337,19 @@ nav {
   }
 
   .read-more {
-	color: #9af;
-    font-size: 14px; 
-	padding: 0px 10px;
+    color: #888;
     font-style: bold;
-	&:hover, &:active {
-	  color: #9af;
-	}
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    &:hover, &:active {
+      color: #9af;
+    }
   }
+}
+
+p ~ .read-more {
+  margin: 0px;
+  padding: 0px;
 }
 
 .cocos2d {
