@@ -1,3 +1,3 @@
-# 3Pills' Coding Den
+# Stephen's Coding Den
 
 GitHub repository for my blog.

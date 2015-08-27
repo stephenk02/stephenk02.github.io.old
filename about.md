@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div class="text_container">
-  <p> So what's up? Name's Stephen Koren and I'm 19 year old student currently studying for a Bachelor of Games and Virtual Worlds (Programming) at the Academy of Interactive Entertainment. </p>
+  <p> So what's up? Name's Stephen Koren and I'm a 19 year old student currently studying for a Bachelor of Games and Virtual Worlds (Programming) at the Academy of Interactive Entertainment. </p>
 </div>
 
 ### More Information
