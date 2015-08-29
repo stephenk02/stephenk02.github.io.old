@@ -25,27 +25,19 @@ body {
   color: #ddd;
 }
 
-.masthead-container {
-  margin: 0px auto;
-  max-width: 800px;
-  background: #222;
-  padding: 0px 15px;
-  width: 100%;
-  border-bottom: 2px solid #444;
-}
-
 .main-container {
   margin: 0px auto 65px;
-  max-width: 800px;
+  max-width: 970px!important;
   background: #222;
   padding: 0px 15px 0px;
+  position: relative;
+  top: 100px;
   width: 100%;
-  border-bottom: 2px solid #444;
+  border: 2px solid #444;
 }
 
 .footer-container {
   margin: 0px auto;
-  max-width: 800px;
   padding: 0px 15px;
   width: 100%;
 }
@@ -216,7 +208,21 @@ p.category {
 //
 
 .wrapper-masthead {
-  margin-bottom: 0px;
+  border-bottom: 2px solid #444;
+  background-color: #222;
+  position:absolute;
+  top:0px;
+  height: 56px;
+  width:100%;
+  max-width:1920px;
+  display:block
+}
+
+.masthead-container {
+  position:relative;
+  padding: 0px 15px;
+  max-width: 970px!important;
+  margin: auto;
 }
 
 .masthead {
@@ -228,14 +234,14 @@ p.category {
 }
 
 .site-avatar {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 0px;
+  margin: 7px;
   
   @include mobile {
     float: none;
-    display: block;
     margin: 0 auto;
   }
 
@@ -255,13 +261,13 @@ p.category {
 }
 
 .site-name {
-  margin: 0px 0 0 0;
   color: #aaa;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 24px;
+  display: inline-block;
+  margin: 7px 0px;
 }
 
 .site-description {
@@ -274,31 +280,57 @@ p.category {
   }
 }
 
-nav {
+.site-svglinks {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  padding-right: 23px;
+  margin: 7px 0px;
+}
+
+
+.site-navbar {
+  display: inline-block;
   font-family: $helveticaNeue;
   font-size: 18px;
-
+  position: relative;
+  padding: 15px 65px; 
+  vertical-align: baseline;
+  
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
+  ul {
+    margin:0; 
+	padding:0;
+	
+    display: inline-block;
+    list-style-type: disc;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+	
+    li {
+	  float:left;
+	  list-style:none;
+	  display: list-item; 
+	  text-align: -webkit-match-parent;
 
-  a {
-    margin-left: 20px;
-    color: #aaa;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+	  a {
+		margin-left: 20px;
+		text-align: right;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: #aaa;
+		&:hover, &:active {
+		  color: #9af;
+		}
 
-    @include mobile {
-      margin: 0 10px;
-      color: #aaa;
-    }
+		@include mobile {
+		  margin: 0 10px;
+		}
+	  }
+	}
   }
 }
 

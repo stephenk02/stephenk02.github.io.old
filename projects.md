@@ -15,10 +15,13 @@ permalink: /projects/
 		  <table style="width:100%">
 		    <tr>
 		      {% if project.layout == "subblog" %}
-		        <td style="width:50%"><a href="{{ site.baseurl }}{{ project.url }}" class="read-more">View Developer Blog</a></td>
-		      {% endif %}
-		      {% if project.github %}
-		        <td style="width:50%"><a href="{{project.github}}" class="read-more">View on GitHub</a></td>
+			    {% if project.subblog %}
+		          <td style="width:50%"><a href="{{ site.baseurl }}{{ project.url }}" class="read-more">View Developer Blog</a></td>
+		        {% else %}
+		          <td style="width:50%"><a href="{{ project.github }}" class="read-more">Visit Project Website</a></td>
+		        {% endif %}
+		      {% elsif project.github %}
+		        <td style="width:50%"><a href="{{project.github}}" class="read-more">View on GitHub</a></td> 
 		      {% endif %}
 			</tr>
 		  </table>
