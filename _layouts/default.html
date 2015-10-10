@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+      
     {% include meta.html %}
-
+      
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml" />
+      
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+      
+    <!-- Touchscreen detection -->
+    <script>
+      if ("ontouchstart" in document.documentElement) {
+        document.documentElement.className += (document.documentElement.className != undefined) ? " touch" : "touch";
+      } else {
+        document.documentElement.className += (document.documentElement.className != undefined) ? " no-touch" : "no-touch";
+      }
+    </script>
+    
   </head>
-
   <body>
-    <div style="position:relative; margin:0 auto; max-width:1920px; width=100%">
-      <div class="wrapper-masthead">
-        <div class="masthead-container">
-		  
-		  <div style="float:left;"> <a href="{{ site.baseurl }}/">
-		    <h1 class="site-name">{{ site.name }}</h1>
-		  </a> </div>
-		  
-		  <div class="site-svglinks">
-            {% include svg-icons.html %}
-		  </div>
-	  
-	  	  <div class="site-navbar">
-	  	    <ul>
-	  	      <li>
-	  	        <a href="{{ site.baseurl }}/">Blog</a>
-	  	      </li>
-	  	      <li>
-	  	        <a href="{{ site.baseurl }}/projects">Projects</a> 
-	  	      </li>
-	  	      <li>
-	  	        <a href="{{ site.baseurl }}/about">About</a>
-	  	      </li>
-	  	    </ul>
-	  	  </div>
+    {% include bootstrap.html %}
+	
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"> 
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}/"><h2 class="site-name">{{ site.name }}</h2></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+		    <!--
+            <li class="dropdown">
+              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="information_menu" href="{{ site.baseurl }}/">Blog</span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="information_menu">
+                <li role="presentation"><a href="{{ site.baseurl }}/information/about">About Zombie Horde</a></li> 
+                <li role="presentation"><a href="{{ site.baseurl }}/information/zh">Game Information</a></li> 
+                <li role="presentation"><a href="{{ site.baseurl }}/information/other">Other</a></li>
+              </ul>
+            </li> 
+            <li class="dropdown">
+              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="guides_menu" href="{{ site.baseurl }}/projects">Projects</a> 
+              <ul class="dropdown-menu" role="menu" aria-labelledby="guides_menu">
+                <li class="dropdown-header">Game Customisation</li>
+                <li role="presentation"><a href="{{ site.baseurl }}/guides/npcs">NPCs</a></li> 
+                <li role="presentation"><a href="{{ site.baseurl }}/guides/weapons">Weapons</a></li> 
+                <li role="presentation"><a href="{{ site.baseurl }}/guides/hooks">Gamemode Hooks</a></li> 
+                <li class="dropdown-header" role="heading">Map Customisation</li>
+                <li role="presentation"><a href="{{ site.baseurl }}/guides/maps">Creating Maps</a></li>
+                <li role="presentation"><a href="{{ site.baseurl }}/guides/spawntool">Spawn Point Tool</a></li>
+              </ul>
+            </li>
+			-->
+            <li><a href="{{ site.baseurl }}/">Blog</a></li>
+            <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+            <li><a href="{{ site.baseurl }}/about">About</a></li>
+          </ul>
         </div>
       </div>
-
-      <div id="main" role="main" class="main-container">
+    </nav>
+      
+    <div class="page">
+      <div class="container">
         {{ content }}
       </div>
+    </div>
+      
+    <div class="footer">
+      <div class="site-svglinks">
+        {% include svg-icons.html %}
+      </div>
+    </div>
 
-      {% include analytics.html %}
-	</div>
+    {% include analytics.html %}
   </body>
 </html>

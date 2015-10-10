@@ -5,8 +5,9 @@
 // IMPORTS
 //
 
-@import "reset";
 @import "variables";
+@import "bootstrap";
+@import "svg-icons";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -16,165 +17,263 @@
 html {
   height: 100%;
   font-size: 100%;
-}
+} 
 
 body {
+  margin: 0px;
   height: 100%;
-  background: #111;
-  font: 18px/1.4 $helvetica;
+  background: #171717;
+  font: 14px/1.5 "Trebuchet MS", sans-serif;
   color: #ddd;
 }
 
-.main-container {
-  margin: 0px auto 65px;
-  max-width: 970px!important;
-  background: #222;
-  padding: 0px 15px 0px;
-  position: relative;
-  top: 100px;
+.page {
+  padding: 0px 18px;
   width: 100%;
-  border: 2px solid #444;
 }
 
-.footer-container {
+.container {
   margin: 0px auto;
-  padding: 0px 15px;
+  padding: 8px 15px;
+  max-width: 900px!important;
+  background: #1d1d1d;
+  position: relative;
   width: 100%;
-}
-
-#main {
-  padding: 0 0 0 20;
-}
-
-.maintitle {
-  font-size: 24px;
-  color: #fb6;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: #ec8;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 0px 0px -5px 0px;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  padding: 0px 0px 0px 10px;
-  font-size: 20px;
-  a {
-    color: inherit;
-  }
+  border-radius: 4px;
+  border: 1px solid #444;
 }
 
 h2 {
-  font-size: 18px;
+  margin-top: 5px;
 }
 
 h3 {
-  font-size: 16px;
-  padding: 0px 0px 0px 10px;
+  margin-top: 0px;
 }
 
 h4 {
-  font-size: 14px;
-  color: #aaa;
+  margin-top: 4px;
+}
+
+p + h3 {
+  margin-top: 18px;
+}
+
+p + h4 {
+  margin-top: 16px;
 }
 
 p {
-  padding: 0px 10px 0px 10px;
-  font-size: 14px;
+  padding: 0px 4px;
+  color: #aaa;
+}
+
+.col-sm-3:hover {
+  background-color: #1f1f1f;
+}
+
+.jumbotron {
+  padding: 0px;
+  margin: 0px;
+  color: #999;
+}
+
+.jumbotron > h1  {
+  padding: 1% 0px 0px 0px;
+  margin: 0px auto;
+  font-size: 48px;
+}
+
+.jumbotron > p {
+  padding: 0px;
+  margin: 0px auto;
+  font-size: 18px;
+}
+
+.container-fluid {
+  margin: 0px auto;
+  max-width: 900px!important;
+}
+
+.navbar {
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover,  
+.navbar-default .navbar-nav>.open>a:visited, {
+  color: #999;
+  border-color: #333;
+  background: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #ccc;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #999;
+}
+.navbar-default .navbar-nav>li>a:focus {
+  color: #ccc;
 }
 
 a {
-  color: #9af;
+  color: #5d8fd7;
+}
+
+a:hover {
+  color: #73aaf7;
   text-decoration: none;
-  cursor: pointer;
-  &:hover, &:active {
-    color: #9af;
+}
+
+.navbar-default {
+  font-weight: bold;
+  padding: 0px;
+  border-radius: 0px;
+  border-color: #555;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background: linear-gradient(#333, #222);
+  color: #fff;
+}
+
+.collapse.in {
+    display: flex;
+}
+.collapsing {
+    display: flex;
+}
+
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
+.navbar-header {
+  margin: 0px auto;
+  padding: 0px 18px;
+}
+
+.navbar-brand {
+  padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: 1px solid #999;
   }
 }
 
-hr {
-  height: 1px;
-  border: 0; 
-  border-top: 2px solid #333;
+.footer {
+  margin: 24px 0px;
+  padding: 3px 0px;
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  //background-color: #222;
+  //border: 1px solid #333;
+  //border-bottom: 0px;
+  //border-left: 0px;
+  //border-right: 0px;
 }
 
-ul, ol {
-  margin: 5px 0;
-  padding-left: 30px;
+.navbar-right {
+  margin: 0px auto;  
+  display: inline-block;
 }
 
-ul {
-  list-style-type: disc;
+.nav > li {
+  float: left;   
 }
 
-ol {
-  list-style-type: decimal;
+.list-group-item {
+  background: #232323;   
+  border-color: #3c3c3c;
 }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+a.kinder-surprise {
+  color: #aaa;
+  text-decoration: none;
+  cursor: text !important;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
+.no-touch .dropdown:hover .dropdown-menu { 
+  display: block;
+  margin-top: 0;
+  background: #333;
 }
 
-em, i {
-  font-style: italic;
+.no-touch .dropdown:focus .dropdown-menu {
+  display: block;
+  margin-top: 2000px;
+  background: #333;
+ }
+
+.touch .disabled {
+
 }
 
-strong, b {
+.dropdown-menu {
+  padding: 0px;
+  border-color: #444;
+  border-top: #333;
+}
+
+.dropdown-menu > li {
+  margin: 0px;
+  background: #222;
+  font-size: 14px;
+  cursor: default;
+}
+
+.dropdown-menu > li > a {
+  background: #222;
+  color: #aaa;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+li.dropdown-header {
+  padding-left: 12px;
+  border-bottom: 1px;
+  color: #ccc;
+  border-color: #ccc;
+}
+ 
+.quote {
+  margin: 0px;
   font-weight: bold;
 }
 
-img {
-  max-width: 100%;
+.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+.panel-footer {
+  background: #337ab7;
+  color: #fff;
 }
 
-.date {
-  font-size: 14px;
-  font-style: italic;
-  color: #888;
-  padding: 0 10px 5px 10px;
+.panel-body {
+  color: #555;
 }
 
-p.category {
-  font-size: 14px;
-  padding: 0px 10px;
-  
-  a {
-    color: #777;
-	&:hover, &:active {
-	  color: #9af;
-	}
-  }
+.img-responsive {
+  margin: auto;   
 }
 
-.subblog > p {
-  padding: 0 10px 10px 10px;
-}
-
-.page {
-  .text_container:last-of-type p:last-of-type {
-    margin-bottom: 15px;
-  } 
-}
-
-.text_container {
-  padding: 5px 10px 10px 10px;
+.row {
+  padding: 0px 4px;   
 }
 
 // Specify the color of the selection
@@ -197,141 +296,6 @@ p.category {
 
 .clearfix:after {
     clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  border-bottom: 2px solid #444;
-  background-color: #222;
-  position:absolute;
-  top:0px;
-  height: 56px;
-  width:100%;
-  max-width:1920px;
-  display:block
-}
-
-.masthead-container {
-  position:relative;
-  padding: 0px 15px;
-  max-width: 970px!important;
-  margin: auto;
-}
-
-.masthead {
-  padding: 10px 0px;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  float: left;
-  margin: 7px;
-  
-  @include mobile {
-    float: none;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  color: #aaa;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 24px;
-  display: inline-block;
-  margin: 7px 0px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: #ddd;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-.site-svglinks {
-  float: right;
-  margin: 7px 0px;
-}
-
-
-.site-navbar {
-  display: inline-block;
-  font-family: $helveticaNeue;
-  font-size: 18px;
-  position: relative;
-  padding: 15px 65px; 
-  vertical-align: baseline;
-  
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-  ul {
-    margin:0; 
-	padding:0;
-	
-    display: inline-block;
-    list-style-type: disc;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-	
-    li {
-	  float:left;
-	  list-style:none;
-	  display: list-item; 
-	  text-align: -webkit-match-parent;
-
-	  a {
-		margin-left: 20px;
-		text-align: right;
-		font-weight: 300;
-		letter-spacing: 1px;
-		color: #aaa;
-		&:hover, &:active {
-		  color: #9af;
-		}
-
-		@include mobile {
-		  margin: 0 10px;
-		}
-	  }
-	}
-  }
 }
 
 //
@@ -404,8 +368,9 @@ p ~ .read-more {
   text-align: center;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+ul {
+    list-style-type: none;
+}
+
+
 @import "highlights";
-@import "svg-icons";
- 
