@@ -88,7 +88,7 @@ permalink: /8-bit/
   
   <li class="list-group-item">
     <h3>Menu 2 - Super Smash Bros. Melee</h3>
-    <p>This song has definitely been the most challenging to translate, but it's definitely turning out to be the best one. 
+    <p>This song has definitely been the most challenging to translate, but I think I like this one quite a good bit. Unfortunately it's proven quite difficult to do, and there's a lot of the song that isn't done.
     There's so much going on in the song that recreating it by ear (I do that) is pretty darn hard.</p>
     
     <ul class="row">
