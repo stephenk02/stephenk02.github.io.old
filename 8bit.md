@@ -48,6 +48,25 @@ permalink: /8-bit/
   </li>
   
   <li class="list-group-item">
+    <h3>Field of View - Hyperdimension Neptunia; Rebirth1</h3>
+    <p>I played this game recently and I have to say the thing that stood out the most about the soundtrack is its distinct style. It has a very heavy electronic techno vibe, and I feel like I captured the vibe pretty well.
+	I like this song the most cause it sounded the most arcadey and I think the 8-bit translation came through pretty well. The sliding is a little bit overbearing after a bit of listening, 
+	a.k.a. half of the Neptunia soundtrack is a guy who just found out about the pitch-bending feature in his favourite audio software. I had fun making this song tho.</p>
+    
+    <ul class="row">
+      <li class="col-xs-8">
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/nepnep.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+      </li>
+      <li class="col-xs-2">
+        <h4>Progress: 95%</h4>
+      </li>
+      <li class="col-xs-2">
+        <a href="https://www.youtube.com/watch?v=LeKiqGwbbuE" target="_blank"><h4>Original</h4></a>
+      </li>
+    </ul>
+  </li>
+  
+  <li class="list-group-item">
     <h3>Final Fall - Sonic XG</h3>
     <p>Hold on, isn't this the <a href="https://www.youtube.com/watch?v=EMtWq2kA_nc" target="_blank">Staff Roll</a> from Marvel Vs. Capcom? Wrong. 
     My exposure to this song begins and ends with the BGM for the only level in a <a href="https://info.sonicretro.org/Sonic_XG" target="_blank">Sonic fan-game</a> demo from 2007. 
@@ -66,7 +85,6 @@ permalink: /8-bit/
       </li>
     </ul>
   </li>
-  
   
   <li class="list-group-item">
     <h3>Menu 2 - Super Smash Bros. Melee</h3>
