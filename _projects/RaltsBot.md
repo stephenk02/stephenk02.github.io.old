@@ -6,4 +6,5 @@ layout: page
 comments: true
 permalink: projects/RaltsBot/
 external: https://github.com/3Pills/RaltsBot
+language: <a href="https://www.python.org/">Python 2.7</a>
 ---

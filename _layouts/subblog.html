@@ -6,7 +6,9 @@ layout: default
   {{ content }}
 <hr>
   
+<ul class="list-group">
 {% for post in site.categories[page.subblog] %}
+  <li class="list-group-item">
   <article class="post">
   
     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -17,6 +19,8 @@ layout: default
     <span class="disqus-comment-count" data-disqus-url="3pills.github.io/{{ post.url }}"> <!-- Count will be inserted here --> </span>
     <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}_identifier">Read More</a>
   </article>
+  </li>
 {% endfor %}
+</ul>
   
 {% include disqus.html %}

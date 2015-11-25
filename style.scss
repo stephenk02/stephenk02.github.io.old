@@ -35,7 +35,7 @@ body {
 .container {
   margin: 0px auto;
   padding: 8px 15px;
-  max-width: 900px!important;
+  max-width: 1200px!important;
   background: #1d1d1d;
   position: relative;
   width: 100%;
@@ -64,8 +64,12 @@ p + h4 {
 }
 
 p {
-  padding: 0px 4px;
+  padding: 0px 0px;
   color: #aaa;
+}
+
+.indent {
+  padding: 0px 4%;
 }
 
 .col-sm-3:hover {
@@ -244,6 +248,15 @@ li.dropdown-header {
   color: #ccc;
   border-color: #ccc;
 }
+
+.entry-title {
+  margin: 0px;
+}
+
+.date {
+  margin: 0px;
+  font-weight: bold;
+}
  
 .quote {
   margin: 0px;
@@ -345,7 +358,7 @@ li.dropdown-header {
 
 p ~ .read-more {
   margin: 0px;
-  padding: 0px;
+  padding: 4px;
 }
 
 .cocos2d {
@@ -368,9 +381,42 @@ p ~ .read-more {
   text-align: center;
 }
 
-ul {
-    list-style-type: none;
+.well-wrapper {
+  background-color: #111;
+  margin: 20px 0px;
+  padding: 10px 0px;
 }
 
+.well-dark {
+  margin: 12px 82px;
+  padding: 0px;
+  background-color: #2c2c2c;
+  border: 1px solid #666;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.languages {
+  margin: 0px;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  margin: -1px 20px -1px 20px;
+  .list-group-item:first-of-type {
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
+  .list-group-item:last-of-type {
+    margin-top: -1px;
+    margin-bottom: 20px;
+  }
+}
 
 @import "highlights";

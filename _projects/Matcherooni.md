@@ -5,6 +5,8 @@ desc: A simple match 3 game inspired by Tetris and Columns, made for a school pr
 layout: game
 comments: true
 permalink: projects/Matcherooni/
+language: <a href="https://www.javascript.com/">JavaScript</a>
+engine: <a href="http://www.cocos2d-x.org/wiki/Cocos2d-JS">Cocos2D-JS</a>
 ---
 
 {% include cocos2d.html %}
