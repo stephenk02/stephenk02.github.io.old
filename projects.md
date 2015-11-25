@@ -14,15 +14,27 @@ permalink: /projects/
   {% if project.engine %} 
   <p class="languages">Engine Dependancy: {{ project.engine }}</p>
   {% endif %}
-  <p class="description">{{ project.desc }}</p>
+  <p class="description">{{ project.excerpt }}</p>
   
   {% if project.video %} 
-  <div class="well-wrapper">
-    <div class="well well-sm well-dark">
-      <video width="100%" controls>
-    	  <source src="{{ site.baseurl }}{{ project.video }}">
-    	  Your browser does not support the video tag.
-      </video>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse{{forloop.index}}">View Gameplay Video</a>
+        </h4>
+      </div>
+	  <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
+        <div class="panel-body">
+		  <div class="well well-sm well-dark">
+            <video width="100%" controls>
+          	  <source src="{{ site.baseurl }}{{ project.video }}">
+          	  Your browser does not support the video tag.
+            </video>
+          </div>
+		</div>
+      </div>
+      
     </div>
   </div>
   {% endif %}

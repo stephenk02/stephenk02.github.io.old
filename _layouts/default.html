@@ -29,49 +29,17 @@
   <body>
     {% include bootstrap.html %}
 	
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header"> 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-          </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/"><h2 class="site-name">{{ site.name }}</h2></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-		    <!--
-            <li class="dropdown">
-              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="information_menu" href="{{ site.baseurl }}/">Blog</span></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="information_menu">
-                <li role="presentation"><a href="{{ site.baseurl }}/information/about">About Zombie Horde</a></li> 
-                <li role="presentation"><a href="{{ site.baseurl }}/information/zh">Game Information</a></li> 
-                <li role="presentation"><a href="{{ site.baseurl }}/information/other">Other</a></li>
-              </ul>
-            </li> 
-            <li class="dropdown">
-              <a class="dropdown-toggle disabled" data-toggle="dropdown" id="guides_menu" href="{{ site.baseurl }}/projects">Projects</a> 
-              <ul class="dropdown-menu" role="menu" aria-labelledby="guides_menu">
-                <li class="dropdown-header">Game Customisation</li>
-                <li role="presentation"><a href="{{ site.baseurl }}/guides/npcs">NPCs</a></li> 
-                <li role="presentation"><a href="{{ site.baseurl }}/guides/weapons">Weapons</a></li> 
-                <li role="presentation"><a href="{{ site.baseurl }}/guides/hooks">Gamemode Hooks</a></li> 
-                <li class="dropdown-header" role="heading">Map Customisation</li>
-                <li role="presentation"><a href="{{ site.baseurl }}/guides/maps">Creating Maps</a></li>
-                <li role="presentation"><a href="{{ site.baseurl }}/guides/spawntool">Spawn Point Tool</a></li>
-              </ul>
-            </li>
-			-->
-            <li><a href="{{ site.baseurl }}/">Blog</a></li>
-            <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-            <li><a href="{{ site.baseurl }}/about">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ site.baseurl }}/"><h2 class="site-name">{{ site.name }}</h2></a>
+    </div>
       
     <div class="page">
+      <ul class="navbar">
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/about">About</a></li>
+      </ul>
       <div class="container">
         {{ content }}
       </div>

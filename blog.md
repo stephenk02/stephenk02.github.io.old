@@ -1,0 +1,49 @@
+---
+layout: default
+title: Blogs
+permalink: /blogs/
+---
+
+<ul class="list-group">
+  {% for post in site.categories.general limit:3 %}
+    {% if post.title %}
+      <li class="list-group-item">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
+        <div class="date"> <a href="{{ site.baseurl }}blogs/{{ post.category }}">General </a> - {{ post.date | date: "%B %e, %Y" }} </div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	  </li>
+    {% endif %}
+  {% endfor %}
+  {% for cat in site.categories %}
+    {% for posts in cat %}
+      {% for post in posts limit:3 %}
+		{% if post.title %}
+		  {% if post.category != 'general' %}
+			<li class="list-group-item">
+              <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
+              <div class="date"> 
+			    <a href="{{ site.baseurl }}blogs/{{ post.category }}">
+		  	   	  {% assign cleanName = 'General' %}
+		          {% if post.category == 'gmodparty' %}
+		  	   	    {% assign cleanName = 'GMod Party' %}
+		          {% elsif post.category == 'earthscape' %}
+		  	   	    {% assign cleanName = 'EarthScape' %}
+		  	   	  {% endif %}
+				  {{ cleanName }}
+			    </a> - {{ post.date | date: "%B %e, %Y" }} </div>
+              <div class="entry">
+                {{ post.excerpt }}
+              </div>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	        </li>
+		  {% endif %}
+		{% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+{% include disqus_count.html %}
