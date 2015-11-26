@@ -25,15 +25,7 @@ permalink: /blogs/
 			<li class="list-group-item">
               <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
               <div class="date"> 
-			    <a href="{{ site.baseurl }}blogs/{{ post.category }}">
-		  	   	  {% assign cleanName = 'General' %}
-		          {% if post.category == 'gmodparty' %}
-		  	   	    {% assign cleanName = 'GMod Party' %}
-		          {% elsif post.category == 'earthscape' %}
-		  	   	    {% assign cleanName = 'EarthScape' %}
-		  	   	  {% endif %}
-				  {{ cleanName }}
-			    </a> - {{ post.date | date: "%B %e, %Y" }} </div>
+			    <a href="{{ site.baseurl }}blogs/{{ post.category | downcase }}">{{ post.category }}</a> - {{ post.date | date: "%B %e, %Y" }} </div>
               <div class="entry">
                 {{ post.excerpt }}
               </div>

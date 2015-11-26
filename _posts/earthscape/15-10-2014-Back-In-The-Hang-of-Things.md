@@ -1,7 +1,7 @@
 ---
 title: Back In The Hang of Things
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Back-In-The-Hang-of-Things

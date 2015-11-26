@@ -1,7 +1,7 @@
 ---
 title: Play-Testing Day 2.0
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Play-Testing-Day-2_0

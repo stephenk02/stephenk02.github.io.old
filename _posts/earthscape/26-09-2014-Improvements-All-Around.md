@@ -1,7 +1,7 @@
 ---
 title: Improvements All Around
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Improvements-All-Around

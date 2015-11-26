@@ -1,10 +1,12 @@
 ---
 title: RaltsBot
 date: 17-06-2015
-desc: Written in Python, RaltsBot is a Twitch IRC bot programmed to do just about anything you could want a bot to do. Rivalling CleverBot in intelligence (i.e. not intelligent at all), this bot can respond to chatters, attempting to converse with the masses. On top of this he also has command support, for some fun quirky little chat stuff.
+desc:
 layout: page
 comments: true
 permalink: projects/RaltsBot/
 external: https://github.com/3Pills/RaltsBot
-language: <a href="https://www.python.org/">Python 2.7</a>
+language: Python 2.7
 ---
+
+Written in Python, RaltsBot is a Twitch IRC bot programmed to do just about anything you could want a bot to do. Rivalling CleverBot in intelligence (i.e. not intelligent at all), this bot can respond to chatters, attempting to converse with the masses. On top of this he also has command support, for some fun quirky little chat stuff.

@@ -5,8 +5,9 @@ layout: subblog
 subblog: earthscape
 comments: true
 permalink: blogs/earthscape/
-video: /video/run'n'gun.mp4
-language: <a href="https://msdn.microsoft.com/en-us/library/kx37x362.aspx">C#</a>
+video: "https://www.youtube.com/embed/beajAbyowak"
+youtube: true
+language: C#
 engine: <a href="https://unity3d.com/">Unity</a>
 ---
 

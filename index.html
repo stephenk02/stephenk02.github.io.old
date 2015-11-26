@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<h3>Recent Blog Posts</h3>
 <ul class="list-group">
   {% for post in site.categories.general limit:3 %}
     {% if post.title %}
@@ -24,13 +25,7 @@ layout: default
               <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
               <div class="date"> 
 			    <a href="{{ site.baseurl }}blogs/{{ post.category }}">
-		  	   	  {% assign cleanName = 'General' %}
-		          {% if post.category == 'gmodparty' %}
-		  	   	    {% assign cleanName = 'GMod Party' %}
-		          {% elsif post.category == 'earthscape' %}
-		  	   	    {% assign cleanName = 'EarthScape' %}
-		  	   	  {% endif %}
-				  {{ cleanName }}
+		          {{ post.category }}
 			    </a> - {{ post.date | date: "%B %e, %Y" }} </div>
               <div class="entry">
                 {{ post.excerpt }}

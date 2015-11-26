@@ -1,7 +1,7 @@
 ---
 title: Vita Input and General Housekeeping
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Vita-Input-and-General-Housekeeping

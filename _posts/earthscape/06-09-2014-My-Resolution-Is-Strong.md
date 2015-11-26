@@ -1,7 +1,7 @@
 ---
 title: My Resolution Is Strong
 tags: post
-category: earthscape
+category: Earthscape
 layout: post
 comments: true
 permalink: blogs/earthscape/My-Resolution-Is-Strong

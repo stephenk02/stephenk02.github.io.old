@@ -1,7 +1,7 @@
 ---
 title: Off Like a Shot
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Off-Like-A-Shot

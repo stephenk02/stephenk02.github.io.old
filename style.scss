@@ -34,13 +34,16 @@ body {
 
 .container {
   margin: 0px auto;
-  padding: 8px 15px;
+  padding: 24px 30px;
   max-width: 1200px!important;
   background: #1d1d1d;
   position: relative;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 0px;
   border: 1px solid #444;
+}
+
+.unround-top {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -60,6 +63,38 @@ body {
   padding: 0px;
   max-width: 1200px!important;
   display: flex;
+}
+
+.panel-heading {
+  background: #333;
+}
+
+.panel-title {
+  text-align: center;
+  color: #CCC;
+  text-decoration: none;
+}
+
+.panel-title:hover {
+  color: #EEE;
+}
+
+.panel-title:focus {
+  text-align: left;
+  text-decoration: none;
+}
+
+.panel-default{
+  text-decoration: none;
+  background: #151515;
+  border-color: #666;
+}
+
+.panel-body {
+  border: 3px 0 #888;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .navbar {
@@ -84,8 +119,38 @@ body {
 
 .navbar-brand {
   padding: 4px;
-  margin: 0px auto;
+  margin: 24px auto;
   align-content: center;
+  color: #FFF;
+}
+
+.site-name {
+  margin: -4px 0px 0px 0px;
+}
+
+.site-desc {
+  margin: 2px 0px 0px 0px;
+  text-align: center;
+}
+
+.list-sm .list-group-item {
+  margin: -1px 0px;
+  padding: 4px 12px;
+}
+
+.embedded .collapsing {
+  display: block;
+}
+
+.embedded .collapse.in {
+  display: block;
+}
+
+.navbar-brand:focus {
+  color: #FFF;
+}
+.navbar-brand:hover {
+  color: #FFF;
 }
 
 .navbar>li>a {
@@ -158,6 +223,11 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  color: #73aaf7;
+  text-decoration: none;
+}
+
 .collapse.in {
     display: flex;
 }
@@ -166,20 +236,16 @@ a:hover {
 }
 
 .footer {
-  margin: 0px auto;
-  padding: 3px 0px;
-  width: 100%;
-  height: 28px;
-  //background-color: #222;
-  //border: 1px solid #333;
-  //border-bottom: 0px;
+  margin: 0px auto 32px;
+  text-align: center;
+  padding: 3px 18px;
+  max-width: 1200px!important;
+  height: 52px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-top: 0px;
   //border-left: 0px;
   //border-right: 0px;
-}
-
-.list-group-item {
-  background: #232323;   
-  border-color: #3c3c3c;
 }
 
 a.kinder-surprise {
@@ -360,12 +426,6 @@ p ~ .read-more {
   width:100%;
 }
 
-.footer {
-  margin: 5px 0 0 0;
-  height: 52px;
-  text-align: center;
-}
-
 .well-wrapper {
   background-color: #111;
   margin: 20px 0px;
@@ -393,7 +453,9 @@ ul {
 }
 
 .list-group-item {
-  margin: -1px 20px -1px 20px;
+  background: #232323;   
+  border-color: #3c3c3c;
+  margin: -1px 0px;
   .list-group-item:first-of-type {
     margin-top: 20px;
     margin-bottom: -1px;
@@ -402,6 +464,10 @@ ul {
     margin-top: -1px;
     margin-bottom: 20px;
   }
+}
+
+.site-svglinks {
+  margin: 0px 0px -4px 0px;
 }
 
 @import "highlights";

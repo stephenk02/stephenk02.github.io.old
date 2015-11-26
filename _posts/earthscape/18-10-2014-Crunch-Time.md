@@ -1,7 +1,7 @@
 ---
 title: Crunch Time
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/Crunch-Time

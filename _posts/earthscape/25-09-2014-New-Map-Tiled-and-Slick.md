@@ -1,7 +1,7 @@
 ---
 title: New Map, Tiled and Slick
 tags: post
-category: earthscape
+category: EarthScape
 layout: post
 comments: true
 permalink: blogs/earthscape/New-Map-Tiled-and-Slick

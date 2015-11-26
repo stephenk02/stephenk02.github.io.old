@@ -30,17 +30,21 @@
     {% include bootstrap.html %}
 	
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{ site.baseurl }}/"><h2 class="site-name">{{ site.name }}</h2></a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+	    <h2 class="site-name">{{ site.name }}</h2>
+	    <h5 class="site-desc">{{ site.desc }}</h5>
+	  </a>
     </div>
       
     <div class="page">
       <ul class="navbar">
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-        <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/blogs">Blogs</a></li>
+        <li><a href="{{ site.baseurl }}/resume">Resumé</a></li>
         <li><a href="{{ site.baseurl }}/about">About</a></li>
       </ul>
-      <div class="container">
+      <div class="container unround-top">
         {{ content }}
       </div>
     </div>

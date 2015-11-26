@@ -4,7 +4,7 @@ date: 16-11-2014
 layout: game
 comments: true
 permalink: projects/Matcherooni/
-language: <a href="https://www.javascript.com/">JavaScript</a>
+language: JavaScript
 engine: <a href="http://www.cocos2d-x.org/wiki/Cocos2d-JS">Cocos2D-JS</a>
 ---
 
