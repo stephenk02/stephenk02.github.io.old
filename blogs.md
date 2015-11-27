@@ -27,4 +27,3 @@ permalink: /blogs/
   {% endfor %}
 {% endfor %}
 </div>
-{% include disqus_count.html %}
