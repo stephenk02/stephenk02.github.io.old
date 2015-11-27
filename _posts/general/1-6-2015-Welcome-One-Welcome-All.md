@@ -1,7 +1,7 @@
 ---
-title: Welcome one, welcome all!
+title: Welcome One, Welcome All!
 tags: post
-category: general
+category: General
 layout: post
 comments: true
 permalink: blogs/general/Welcome-One-Welcome-All

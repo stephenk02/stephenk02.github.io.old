@@ -3,7 +3,7 @@ title: Virtual World
 date: 9-8-2015
 layout: page
 comments: true
-language: C++
+language: C++, GLSL
 video: https://www.youtube.com/embed/JLKQwkJ_YsY
 youtube: true
 ---

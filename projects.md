@@ -42,10 +42,10 @@ permalink: /projects/
   </div>
   {% endif %}
   
-  {% if project.layout == "game" %}<a href="{{ site.baseurl }}/projects/{{ project.title }}" class="btn btn-primary btn-md read-more">Play Game</a>
-  {% elsif project.layout == "subblog" && project.subblog != null %} <a href="{{ site.baseurl }}{{ project.url }}" class="btn btn-primary btn-md read-more">View Developer Blog</a>
-  {% elsif project.external != null %} <a href="{{ project.external }}" class="btn btn-primary btn-md read-more">Visit Project Website</a>
-  {% endif %}
+  <!--{% if project.layout == "game" %}<a href="{{ site.baseurl }}/projects/{{ project.title }}" class="btn btn-primary btn-md read-more">Play Game</a>
+  <!--{% elsif project.layout == "subblog" && project.subblog != null %} <a href="{{ site.baseurl }}{{ project.url }}" class="btn btn-primary btn-md read-more">View Developer Blog</a>
+  <!--{% elsif project.external != null %} <a href="{{ project.external }}" class="btn btn-primary btn-md read-more">Visit Project Website</a>
+  <!--{% endif %}-->
   {% if forloop.last != true %}<hr>{% endif %}
 {% endfor %}
 

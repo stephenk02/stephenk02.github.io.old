@@ -1,0 +1,28 @@
+﻿Stephen Koren
+www.stephenkoren.net • stephenkoren7@gmail.com
+Education
+________________
+
+
+Canberra Institute of Technology / Academy of Interactive Entertainment (2014 - Present), Sydney, NSW
+Bachelor of Games and Virtual Worlds - Programming
+* Focus on mathematics and business surrounding games.
+* Learned about Agile methodology within the games development environment.
+* Learned about quality management in games.
+* Studied UML implementation within technical documentation
+* Participated in multiple mock games development projects with other studying programmers, as well as studying artists and designers.
+* Adhered to iterative development cycles during projects with team meetings throughout each group project, akin to Agile development.
+* Game Physics programming.
+
+
+Skills
+________________
+
+
+Languages: C++, C#, GLSL, JavaScript, Python, Lua
+Frameworks / APIs: OpenGL, PhysX, XNA, MonoGame
+Operating Systems: Windows
+Software: 
+* IDEs: Visual Studio ‘12 - ‘15, MonoDevelop, PSM SDK
+* Version Control: Perforce, git
+* Game Engines: Unity, Source

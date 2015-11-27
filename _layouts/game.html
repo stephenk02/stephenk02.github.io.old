@@ -3,17 +3,8 @@ layout: default
 ---
 
 <article class="post">
-  <ul class="row">
-    <li class="col-xs-4"> {% if page.prev %}<a href="{{ site.baseurl }}{{ page.prev.url }}"><p>Prev</p></a>{% endif %}</li>
-	<li class="col-xs-4" style="text-align: center;">
-        <h1>{{ page.title }} </h1>
-        <div class="date"> {{ page.date | date: "%B %e, %Y" }} </div>
-    </li>
-	<li>{% if page.next %}<a href="{{ site.baseurl }}{{ page.next.url }}"><p>Next</p></a>{% endif %}</li>
-  </ul>
-
   <div class="entry">
-    {{ content }}
+    {% include cocos2d.html %}
   </div>
 
   {% include disqus.html %}

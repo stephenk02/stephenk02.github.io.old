@@ -4,38 +4,27 @@ title: Blogs
 permalink: /blogs/
 ---
 
-<ul class="list-group">
-  {% for post in site.categories.general limit:3 %}
-    {% if post.title %}
-      <li class="list-group-item">
-        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
-        <div class="date"> <a href="{{ site.baseurl }}blogs/{{ post.category }}">General </a> - {{ post.date | date: "%B %e, %Y" }} </div>
-        <div class="entry">
-          {{ post.excerpt }}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	  </li>
-    {% endif %}
-  {% endfor %}
-  {% for cat in site.categories %}
-    {% for posts in cat %}
-      {% for post in posts limit:3 %}
-		{% if post.title %}
-		  {% if post.category != 'general' %}
-			<li class="list-group-item">
-              <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3></th> 
-              <div class="date"> 
-			    <a href="{{ site.baseurl }}blogs/{{ post.category | downcase }}">{{ post.category }}</a> - {{ post.date | date: "%B %e, %Y" }} </div>
-              <div class="entry">
-                {{ post.excerpt }}
-              </div>
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	        </li>
-		  {% endif %}
+<div>
+{% for category in site.categories %}
+  {% for posts in category %}
+    {% for post in posts %}
+	  {% if forloop.first %}
+        <h3><a href="{{ site.baseurl }}/blogs/{{ post.category | downcase }}"> {{ post.category }} </a></h3> 
+        <ul class="list-group">
+      {% endif %}
+	  {% if post.title %}
+	      <li class="list-group-item">
+            <h4> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h4> 
+            <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
+            <div class="entry"> {{ post.excerpt }} </div>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+          </li>
+	    {% if forloop.last %}
+          </ul>
 		{% endif %}
-      {% endfor %}
+	  {% endif %}
     {% endfor %}
   {% endfor %}
-</ul>
-
+{% endfor %}
+</div>
 {% include disqus_count.html %}

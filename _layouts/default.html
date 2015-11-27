@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} : {{ site.desc }}</title>
       
     {% include meta.html %}
       
@@ -38,20 +38,57 @@
       
     <div class="page">
       <ul class="navbar">
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-        <li><a href="{{ site.baseurl }}/blogs">Blogs</a></li>
-        <li><a href="{{ site.baseurl }}/resume">Resumé</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
+        <li><a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="nav-active"{% endif %}>Home</a></li>
+        <li><a href="{{ site.baseurl }}/projects" {% if page.url contains '/projects' %}class="nav-active"{% endif %}>Projects</a></li>
+        <li><a href="{{ site.baseurl }}/blogs" {% if page.url contains '/blogs' %}class="nav-active"{% endif %}>Blogs</a></li>
+        <li><a href="{{ site.baseurl }}/resume" {% if page.url contains '/resume' %}class="nav-active"{% endif %}>Resumé</a></li>
+        <li><a href="{{ site.baseurl }}/about" {% if page.url contains '/about' %}class="nav-active"{% endif %}>About</a></li>
       </ul>
       <div class="container unround-top">
-        {{ content }}
+        {% if page.sidebar == nil %}
+		  <div class="row">
+            <div class="col-sm-9">
+	          {{content}}
+            </div>
+            <div class="col-sm-3 sidebar">
+              <h3>Recent Blog Posts</h3>
+              <ul class="list-group">
+              {% for post in site.posts limit:4 %}
+                {% if post.title %}
+                  <li class="list-group-item">
+                    <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5></th> 
+                    <div class="date"> <a href="{{ site.baseurl }}blogs/{{ post.category }}"> {{ post.category }} </a> - {{ post.date | date: "%B %e, %Y" }} </div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              </ul>
+			  
+              <h3>Blogs</h3>
+              <ul class="list-group">
+              {% for category in site.categories %}
+                <li class="list-group-item">
+			      <h5><a href = "{{ site.baseurl }}{{ category[0] | downcase }}">{{category[0]}}</a></h5>
+			    </li>
+              {% endfor %}
+			  </ul>
+			  
+			  <h3>Contact Me</h3>
+              <div class="site-svglinks">
+                {% include svg-icons.html %}
+              </div>
+			  
+            </div>
+          </div> 
+		{% else %}
+          {{ content }}
+		{% endif %}
       </div>
-    </div>
-      
-    <div class="footer">
-      <div class="site-svglinks">
-        {% include svg-icons.html %}
+      <div class="footer">
+        {% if page.sidebar != nil %}
+          <div class="site-svglinks">
+            {% include svg-icons.html %}
+          </div>
+		{% endif %}
       </div>
     </div>
 
