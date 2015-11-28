@@ -6,7 +6,7 @@ comments: true
 language: C++, GLSL
 video: https://www.youtube.com/embed/JLKQwkJ_YsY
 youtube: true
-excerpt_seperator: <!--end-excerpt-->
+excerpt_seperator: <!--excerpt-->
 ---
 This virtual world is a project I completed for an assignment during my second year of programming study at AIE. It is a technical demonstration which involves many different things being combined to form a basic 3D game engine.
 This engine includes:
@@ -24,4 +24,4 @@ This engine includes:
 </ul>
 
 The most challenging aspect of this was coming to terms with and understanding exactly how the CPU interfaced with the GPU to transmit various types of data (shadow-mapping, lighting data). I think I got it down though.
-<!--end-excerpt-->
+{{page.excerpt_seperator}}
