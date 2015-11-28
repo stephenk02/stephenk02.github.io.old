@@ -14,7 +14,7 @@ permalink: /projects/
   {% if project.engine %} 
   <p class="languages">Engine Dependancy: {{ project.engine }}</p>
   {% endif %}
-  <p class="description">{{ project.excerpt }}</p>
+  <p class="description">{{ project.desc }}</p>
   
   {% if project.video %} 
   <div class="panel-group">
