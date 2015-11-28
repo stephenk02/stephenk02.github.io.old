@@ -62,13 +62,20 @@
                 {% endif %}
               {% endfor %}
               </ul>
-			  
+
               <h3>Blogs</h3>
               <ul class="list-group">
-              {% for category in site.categories %}
-                <li class="list-group-item">
-			      <h5><a href = "{{ site.baseurl }}{{ category[0] | downcase }}">{{category[0]}}</a></h5>
-			    </li>
+              {% assign categoryArray = '' %}
+              {% for post in site.posts %}
+                {% if post.title %}
+                  {% if categoryArray contains post.category %}
+                  {% else %}
+                    <li class="list-group-item">
+			                <h5><a href = "{{ site.baseurl }}{{ post.category | downcase }}">{{post.category}}</a></h5>
+			              </li>
+                    {% assign categoryArray = categoryArray | append: " | " | append: post.category %}
+                  {% endif %}
+                {% endif %}
               {% endfor %}
 			  </ul>
 			  
