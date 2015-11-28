@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <div class="entry">
-    {% include cocos2d.html %}
+    {{ page.content | remove: page.excerpt }}
   </div>
 
   {% include disqus.html %}
