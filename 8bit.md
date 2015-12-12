@@ -12,6 +12,23 @@ permalink: /8-bit/
 <ul class="list-group">
 
   <li class="list-group-item">
+    <h3>Actor's Anteroom - Melty Blood: Actress Again [Current Code]</h3>
+    <p>So unfinished I wouldn't dare post it without the actual music supporting it. 2AABC 5C 6C jBC djCBB</p>
+    
+    <ul class="row">
+      <li class="col-xs-8">
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/actors_anteroom.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+      </li>
+      <li class="col-xs-2">
+        <h4>Progress:25%</h4>
+      </li>
+      <li class="col-xs-2">
+        <a href="https://www.youtube.com/watch?v=zEiwolp6qjc" target="_blank"><h4>Original</h4></a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item">
     <h3>Courtroom Lounge - Phoenix Wright: Ace Attourney</h3>
     <p>This is the song that plays before cases in the original Phoenix Wright. Not too much to say about this, made it cause it was quick and Phoenix Wright is sick.</p>
     
