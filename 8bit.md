@@ -113,7 +113,7 @@ permalink: /8-bit/
         <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/menu_2.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
       </li>
       <li class="col-xs-2">
-        <h4>Progress: 50%</h4>
+        <h4>Progress:50%</h4>
       </li>
       <li class="col-xs-2">
         <a href="https://www.youtube.com/watch?v=JD33HjaO4iA" target="_blank"><h4>Original</h4></a>
@@ -127,7 +127,7 @@ permalink: /8-bit/
     
     <ul class="row">
       <li class="col-xs-8">
-        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/sakura_koi_uta.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/ruins.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
       </li>
       <li class="col-xs-2">
         <h4>Progress:75%</h4>
