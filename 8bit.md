@@ -29,6 +29,23 @@ permalink: /8-bit/
   </li>
 
   <li class="list-group-item">
+    <h3>Can o' Salt - Super Meat Boy</h3>
+    <p>This song is so gud. So gud. DannyB is the champ. That is literally all there is to it. Fan. Tastic.</p>
+    
+    <ul class="row">
+      <li class="col-xs-8">
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/salty_can.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+      </li>
+      <li class="col-xs-2">
+        <h4>Progress:100%</h4>
+      </li>
+      <li class="col-xs-2">
+        <a href="https://www.youtube.com/watch?v=VKNJTrpQWsE" target="_blank"><h4>Original</h4></a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item">
     <h3>Courtroom Lounge - Phoenix Wright: Ace Attourney</h3>
     <p>This is the song that plays before cases in the original Phoenix Wright. Not too much to say about this, made it cause it was quick and Phoenix Wright is sick.</p>
     
