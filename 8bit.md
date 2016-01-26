@@ -56,7 +56,7 @@ permalink: /8-bit/
         <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/emotion.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
       </li>
       <li class="col-xs-2">
-        <h4>Progress: 50%</h4>
+        <h4>Progress:50%</h4>
       </li>
       <li class="col-xs-2">
         <a href="https://www.youtube.com/watch?v=uCNHnFmvA_I" target="_blank"><h4>Original</h4></a>
@@ -75,7 +75,7 @@ permalink: /8-bit/
         <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/nepnep.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
       </li>
       <li class="col-xs-2">
-        <h4>Progress: 95%</h4>
+        <h4>Progress:95%</h4>
       </li>
       <li class="col-xs-2">
         <a href="https://www.youtube.com/watch?v=LeKiqGwbbuE" target="_blank"><h4>Original</h4></a>
@@ -95,7 +95,7 @@ permalink: /8-bit/
         <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/final_fall.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
       </li>
       <li class="col-xs-2">
-        <h4>Progress: 95%</h4>
+        <h4>Progress:95%</h4>
       </li>
       <li class="col-xs-2">
         <a href="https://www.youtube.com/watch?v=VsNmOV2oP-4" target="_blank"><h4>Original</h4></a>
@@ -117,6 +117,41 @@ permalink: /8-bit/
       </li>
       <li class="col-xs-2">
         <a href="https://www.youtube.com/watch?v=JD33HjaO4iA" target="_blank"><h4>Original</h4></a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item">
+    <h3>Ruins - Undermeme</h3>
+    <p>Something something this games pretty cool fave song ye.</p>
+    
+    <ul class="row">
+      <li class="col-xs-8">
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/sakura_koi_uta.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+      </li>
+      <li class="col-xs-2">
+        <h4>Progress:75%</h4>
+      </li>
+      <li class="col-xs-2">
+        <a href="https://www.youtube.com/watch?v=VT9BfLVbnI8" target="_blank"><h4>Original</h4></a>
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item">
+    <h3>SAKURA-KOI-UTA - Melty Blood: Actress Again [Current Code]</h3>
+    <p>This is the best music in the game. Fight me on that bro, I double dare you. My Hisui doesn't go down easy, especially to fuccbois that question this stage's music. 
+	Real talk, I'm glad I managed to capture the feeling this song conveys, of this sort of reserved sense of wonder that slowly builds and explodes into this unabashed awe of the beauty of the <strike>waifu</strike> world. That's what I get from this song.</p>
+    
+    <ul class="row">
+      <li class="col-xs-8">
+        <audio controls style="width: 100%"> <source src="{{site.baseurl}}/audio/sakura_koi_uta.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio>
+      </li>
+      <li class="col-xs-2">
+        <h4>Progress:95%</h4>
+      </li>
+      <li class="col-xs-2">
+        <a href="https://www.youtube.com/watch?v=_kJzsRRdBP0" target="_blank"><h4>Original</h4></a>
       </li>
     </ul>
   </li>
