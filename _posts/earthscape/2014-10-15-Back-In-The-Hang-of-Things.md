@@ -1,10 +1,9 @@
 ---
 title: Back In The Hang of Things
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Back-In-The-Hang-of-Things
 ---
 
 Today I had to get back into the hang of things, as the title says. It was our return to programming and was also a little hectic as the team was fragmented between classes, so communication had to be done via SMS. We we given the final spritesheet for our player as well as enemies, courtesy of our artist, which another team member immediately began to implement. 

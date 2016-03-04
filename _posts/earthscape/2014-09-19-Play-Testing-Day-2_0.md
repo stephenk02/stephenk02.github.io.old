@@ -1,10 +1,9 @@
 ---
 title: Play-Testing Day 2.0
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Play-Testing-Day-2_0
 ---
 
 Today marks the end of week 3 of gameplay development. Half of today was reserved for play-testing again, this time in a more public environment, something a bit more valuable than playtesting between developer teams. However, for the first half of the day I was developing an inventory system.

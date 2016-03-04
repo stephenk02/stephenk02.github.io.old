@@ -1,10 +1,9 @@
 ---
 title: Improvements All Around
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Improvements-All-Around
 ---
 
 As the Tiled implementation was so slick yesterday, I decided to add a player spawn point and enemy spawn points as well. This did take a few hours though, as the code we're using took a little reading to understand. It did wind up looking really good though. I also added an extra layer to the map, for things below the player's platform, to compliment those overhead.

@@ -1,10 +1,9 @@
 ---
 title: Crunch Time
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Crunch-Time
 ---
 
 With the project being due at the end of next week, and me feeling my work over the prior week was inadequate, it was time to do some minor crunch-time over the weekend. This involved heavy optimisation of the mini-map code I previously created. This didn't take to much time to implement, but basically involved me using matrix transforms rather than moving each tile about, something which I REALLY shouldn't have been doing in the first place :P.

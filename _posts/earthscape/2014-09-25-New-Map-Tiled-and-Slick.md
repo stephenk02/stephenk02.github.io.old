@@ -1,10 +1,9 @@
 ---
 title: New Map, Tiled and Slick
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/New-Map-Tiled-and-Slick
 ---
 
 Starting today our artist finished the tileset for our cave environments within the game. As such today was spent incorporating this in a decent way within the game. This involved making a layer system for drawing the map, as well as messing with the Tiled importing code we found on the web to support importing objects placed in the Tiled program. The layer system was required due to the 45 degree bird's eye perspective the game is set from, so the player would need to be obscured by walls and columns, at certain positions.

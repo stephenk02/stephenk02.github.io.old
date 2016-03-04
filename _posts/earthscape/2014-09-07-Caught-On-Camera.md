@@ -1,10 +1,9 @@
 ---
 title: Caught On Camera
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Caught-On-Camera
 ---
 
 Seeing as yesterday was resolution day, today is camera day. Boy was today a tough one.

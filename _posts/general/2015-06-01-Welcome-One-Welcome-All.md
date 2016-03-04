@@ -1,10 +1,9 @@
 ---
 title: Welcome One, Welcome All!
 tags: post
-category: General
+category: general
 layout: post
 comments: true
-permalink: blogs/general/Welcome-One-Welcome-All
 ---
 
 Welcome, internet denizens to the grand opening of my GitHub blog! This was an absolute pain to set up, but it looks pretty good, so I'm perfectly fine with the effort investment.

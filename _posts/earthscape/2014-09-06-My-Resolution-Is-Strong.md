@@ -1,10 +1,9 @@
 ---
 title: My Resolution Is Strong
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/My-Resolution-Is-Strong
 ---
 
 Our second week on the project and things are still going well. We had a SCRUM meeting to kick things off and everyone seems to understand what's required of them. I asked around the group and no one had any issues either, so things are off to a good start.

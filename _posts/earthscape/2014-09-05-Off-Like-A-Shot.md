@@ -1,10 +1,9 @@
 ---
 title: Off Like a Shot
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Off-Like-A-Shot
 ---
 
 Development continues today as we begin work on the game code itself. Whilst I was initially worried yesterday things seem to have picked up smoothly and the group is going well creating various bits of code. 

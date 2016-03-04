@@ -57,26 +57,20 @@
               {% for post in site.posts limit:4 %}
                 {% if post.title %}
                   <li class="list-group-item">
-                    <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5></th> 
-                    <div class="date"> <a href="{{ site.baseurl }}blogs/{{ post.category }}"> {{ post.category }} </a> - {{ post.date | date: "%B %e, %Y" }} </div>
-                  </li>
+                    <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+                    <div class="date"> <a href="/{{ site.baseurl }}{{ post.permalink }}"> {{ site.cleancategories[post.category] }} </a> - {{ post.date | date: "%B %e, %Y" }} </div>	
+                    <h5><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">0 Comments</a></h5>
+				  </li>
                 {% endif %}
               {% endfor %}
               </ul>
 
               <h3>Blogs</h3>
               <ul class="list-group">
-              {% assign categoryArray = '' %}
-              {% for post in site.posts %}
-                {% if post.title %}
-                  {% if categoryArray contains post.category %}
-                  {% else %}
-                    <li class="list-group-item">
-			                <h5><a href = "{{ site.baseurl }}{{ post.category | downcase }}">{{post.category}}</a></h5>
-			              </li>
-                    {% assign categoryArray = categoryArray | append: " | " | append: post.category %}
-                  {% endif %}
-                {% endif %}
+              {% for category in site.categories %}
+                  <li class="list-group-item">
+			        <h5><a href = "{{ site.baseurl }}{{ post.category }}">{{category}}{{ site.cleancategories[category[0]] }}</a></h5>
+			      </li>
               {% endfor %}
 			  </ul>
 			  

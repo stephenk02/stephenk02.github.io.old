@@ -1,10 +1,9 @@
 ---
 title: UIs and Play-Testing
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/UIs-and-Play-Testing
 ---
 
 So today I finished up the camera for the game. It can now focus on any entity within the game, storing a reference to the entity and getting it's position when calculating the focal point. I also added controls, allowing the player to offset the camera in any of 8 directions (something I hope to expand into an omni-directional look via the PS Vita thumb sticks).
@@ -17,7 +16,7 @@ Aside from this it was play-test day and, needless to say, we were all rather ag
 
 Unfortunately our game was a mess when the time came around. It compiled sure, but it wasn't particularly stellar. With about two weeks worth of development though, I'd say this was no failure. A playable game is as good as it should get. A quick screen capture of what the early alpha build has to offer can be seen below.
 
-![Early EarthScape alpha build]({{ site.baseurl }}/images/earthscape/1.png "Early EarthScape alpha build")	
+![Early earthscape alpha build]({{ site.baseurl }}/images/earthscape/1.png "Early earthscape alpha build")	
 
 The player can walk around, shift the camera in 8 directions and kill the clone. There's not too much going on here but there's enough behind the scenes to justify it's current state, or lack thereof, gameplay-wise.
 

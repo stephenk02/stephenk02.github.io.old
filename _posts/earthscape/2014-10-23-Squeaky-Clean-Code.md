@@ -1,10 +1,9 @@
 ---
 title: Squeaky Clean Code
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Squeaky-Clean-Code
 ---
 
 Today we went ahead and flushed out all of that icky redundant and unused code, as well as all the commented out code. This helped us space out the project a little easier and in doing so we noticed a few bugs that were keeping the Vita version's frame rate down significantly. 

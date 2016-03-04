@@ -1,10 +1,9 @@
 ---
 title: The Final Week
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/The-Final-Week
 ---
 
 Ah, the final week of the project! It's time to get incredibly over-worked and worried. Except we totally won't cause we have a plan. Throughout this final week we'll be focusing exclusively on bug fixes and documentation. The game at this point is passable so we don't feel pressured to add any new and poorly implemented features right before our time is up. 

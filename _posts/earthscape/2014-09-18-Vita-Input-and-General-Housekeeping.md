@@ -1,10 +1,9 @@
 ---
 title: Vita Input and General Housekeeping
 tags: post
-category: EarthScape
+category: earthscape
 layout: post
 comments: true
-permalink: blogs/earthscape/Vita-Input-and-General-Housekeeping
 ---
 
 Today we were finally given a chance to run our games on the Vita platform, and as such I tested yesterdays input and it worked fairly well! I was stunned because things usually go horribly wrong. In any case, everything else didn't go well, the game crashed at the sprite draw, with a fairly uninformative error message. Upon stopping the map tiles from drawing, however, the game ran just fine. 
