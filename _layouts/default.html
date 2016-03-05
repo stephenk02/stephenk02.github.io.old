@@ -57,9 +57,12 @@
               {% for post in site.posts limit:4 %}
                 {% if post.title %}
                   <li class="list-group-item">
-                    <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
-                    <div class="date"> <a href="/{{ site.baseurl }}{{ post.permalink }}"> {{ site.cleancategories[post.category] }} </a> - {{ post.date | date: "%B %e, %Y" }} </div>	
-                    <h5><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">0 Comments</a></h5>
+                    <h4 style="padding:0px; margin:4px 0px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+                    <div class="date"> 
+					  {{ post.date | date: "%b %d, %Y" }} | 
+					  <a href="/{{ site.baseurl }}{{ post.permalink }}"> {{ site.cleancategories[post.category] }} </a>
+					</div>	
+                    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">0 Comments</a>
 				  </li>
                 {% endif %}
               {% endfor %}
@@ -68,9 +71,10 @@
               <h3>Blogs</h3>
               <ul class="list-group">
               {% for category in site.categories %}
-                  <li class="list-group-item">
-			        <h5><a href = "{{ site.baseurl }}{{ post.category }}">{{category}}{{ site.cleancategories[category[0]] }}</a></h5>
-			      </li>
+			    {% assign meme = category[0] %}
+                <li class="list-group-item">
+			      <h5><a href = "{{ site.baseurl }}{{ post.category }}"> {{ site.cleancategories[meme] }}</a></h5>
+			    </li>
               {% endfor %}
 			  </ul>
 			  

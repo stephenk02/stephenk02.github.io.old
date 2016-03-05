@@ -1,8 +1,8 @@
 ---
 title: General
-date: 3-9-2014
+date: 06-01-2015
 layout: subblog
-subblog: General
+subblog: general
 comments: false
 permalink: blogs/general/
 ---

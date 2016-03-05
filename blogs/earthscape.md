@@ -1,8 +1,8 @@
 ---
 title: EarthScape
-date: 3-9-2014
+date: 03-09-2014
 layout: subblog
-subblog: EarthScape
+subblog: earthscape
 comments: false
 permalink: blogs/earthscape/
 ---

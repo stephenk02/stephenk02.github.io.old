@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<h3>Who are you?</h3>
+<h3>Who I Am</h3>
 <p> So what's up? Name's Stephen Koren and I'm a 19 year old student currently studying for a Bachelor of Games and Virtual Worlds (Programming) at the Academy of Interactive Entertainment. </p>
 
 <h3>What is this place?</h3>
@@ -21,5 +21,5 @@ I started to gear myself towards understanding game mechanics much more thorough
 <p> It was probably here where my interest for programming began to stem. Understanding the intricacies of a game's code and how to abuse the abundance of glitches 
 within a game engaged me to the point where I could imagine myself one day making the kind of game I wrestled with so much. </p>
 
-<h3>Your'e so cool!!! How can we talk?</h3>
-  <p> If you wish to contact me, you can do so via the disqus comment integration within the website, or via one of the forms of social media in the sidebar to the right. </p>
+<h3>You're so cool!!! How can we get in touch?</h3>
+<p> If you wish to contact me, you can do so via the disqus comments within the website, or via one of the forms of social media in the sidebar to the right. </p>

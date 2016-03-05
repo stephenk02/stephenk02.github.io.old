@@ -58,6 +58,7 @@ cleancategories:
   earthscape: EarthScape
   general: General
   webgame: Web-based Game
+  researchblog: Market Research
 
 # Set the Sass partials directory, as we're using @imports
 sass:
