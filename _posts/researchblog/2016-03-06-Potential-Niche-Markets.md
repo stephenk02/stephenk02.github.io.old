@@ -8,7 +8,7 @@ comments: true
 
 <p>Doing my current niche market research, I've come to consider a number of options in regards to my final business case.</p>
 
-<p>Personally, I'm quite interested in the areas of graphics programming, so the use of a new shader technology like a compute shader seems quite interesting. Another interest of mine is artificial intelligence, but I can't exactly think of something with AI that.</p>
+<p>Personally, I'm quite interested in the area of graphics programming, so the use of a new shader technology like a compute shader seems quite interesting. Another interest of mine is artificial intelligence, but I can't exactly think of something with the focus of AI that would be useful as a technology for others to use.</p>
 
 <p>When asking around the dinner table, my family present a number of interesting ideas aimed towards helping people with disabilities. One such idea that seemed feasible was a mobile application that would take advantage of a phone's GPS and camera to act in place of a guide dog for a blind person. Though this would be quite complicated to implement correctly, it is an interesting idea to consider.</p>
 
