@@ -14,7 +14,7 @@ comments: true
 
 <p>With the prevalence of virtual reality in the collective conscience of today's gamers, I also feel something using that technology could be an appropriate area to research in. I don't think I'll have access to something expensive like the Oculus Rift or the Valve Vive, so Google Cardboard seems like the only area I could break into with this type of venture.</p>
 
-<p>Another potential option is to release a Unity package of some kind. I've never worked with Unreal so Unity is my only option if I want to make something quality. I could do some kind of convenience package that alleviates some of Unity's backend requirements, much like iTween does for smoothing object movements and rotations.<sup><a href="">[1]</a></sup></p>
+<p>Another potential option is to release a Unity package of some kind. I've never worked with Unreal so Unity is my only option if I want to make something quality. I could do some kind of convenience package that alleviates some of Unity's backend requirements, much like iTween does for smoothing object movements and rotations.<sup><a href="#s1">[1]</a></sup></p>
 
 <p>Picking from these potential niches is proving to be quite difficult, however, and I can't seem to settle on a single idea. Hopefully I can clear up a potential project in the near future.</p>
 
