@@ -28,13 +28,17 @@ disqus: stephenkorengameprogrammer
 
 google_analytics: UA-63619308-1
 
-url: http://3pills.github.io/
+url: http://www.stephenkoren.net/
 baseurl: ""
 
 permalink: /blogs/:categories/:title/
 
-markdown: kramdown
 highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 version: v1.1.0
 
@@ -45,7 +49,7 @@ cleancategories:
   researchblog: Market Research
 
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :expanded
 
 gems:
   - jekyll-sitemap

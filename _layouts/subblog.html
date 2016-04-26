@@ -6,10 +6,8 @@ layout: default
   {{ content }}
 <hr>
   
-<ul class="list-group">
 {% for post in site.posts %}
   {% if post.category == page.subblog %}
-  <li class="list-group-item">
   <article class="post">
   
     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -18,11 +16,10 @@ layout: default
     <p>{{ post.excerpt }}</p>
   
     <span class="disqus-comment-count" data-disqus-url="3pills.github.io/{{ post.url }}"> <!-- Count will be inserted here --> </span>
-    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}_identifier">Read More</a>
+    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}_identifier">0 Comments</a>
   </article>
-  </li>
+  <br>
   {% endif %}
 {% endfor %}
-</ul>
   
 {% include disqus.html %}

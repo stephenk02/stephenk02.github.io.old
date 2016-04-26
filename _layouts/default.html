@@ -60,7 +60,7 @@
                     <h4 style="padding:0px; margin:4px 0px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
                     <div class="date"> 
 					  {{ post.date | date: "%b %d, %Y" }} | 
-					  <a href="/{{ site.baseurl }}{{ post.permalink }}"> {{ site.cleancategories[post.category] }} </a>
+					  <a href="{{ site.baseurl }}/blogs/{{ post.category }}"> {{ site.cleancategories[post.category] }} </a>
 					</div>	
                     <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">0 Comments</a>
 				  </li>

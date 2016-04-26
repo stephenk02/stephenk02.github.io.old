@@ -65,13 +65,21 @@ body {
   border-radius: 5px;
 }
 
+pre {
+  tab-size: 4;
+}
+
+code {
+  font-size: 12px;
+}
+
 .highlight {
-  background-color: transparent;
-  border: 0px solid #111;
+  background-color: #fff;
+  border: 2px solid #888;
   -moz-box-shadow: 0px 0px rgba(0,0,0,0);
   -webkit-box-shadow: 0px 0px rgba(0,0,0,0);
   box-shadow: 0px 0px rgba(0,0,0,0);
-  padding: 0px;
+  padding: 8px;
   margin: 0px;
   font-size: 14px;
   overflow: auto;
@@ -463,6 +471,16 @@ li.dropdown-header {
       color: #9af;
     }
   }
+}
+
+.post-image {
+	padding: 16px 0px 0px 0px;
+}
+
+.post-image-caption {
+	text-align:center;
+	padding: 0px 0px 16px 0px;
+	font-weight: bold;
 }
 
 p ~ .read-more {
