@@ -12,7 +12,7 @@ comments: true
 
 <p>Because Phaser natively supports JSON files and loading them in to the clientside from the server, I began to write code which interpretted this data and swapped the palettes of a sprite in the Phaser engine. This is done via Phaser's BitmapData object, an object which gives access to an empty data canvas which can load images and subsequently edit them. The results of my code are below.</p>
 
-{% highlight JS %}
+{% highlight js linenos=table %}
 create: function () {
 	this.sprite = game.add.sprite(game.scale.width / 2,game.scale.height / 2,'hisui');
 	this.sprite.anchor.set(0.5);

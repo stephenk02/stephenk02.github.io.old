@@ -20,9 +20,9 @@
     <!-- Touchscreen detection -->
     <script>
       if ("ontouchstart" in document.documentElement) {
-        document.documentElement.className += (document.documentElement.className != undefined) ? " touch" : "touch";
+        document.documentElement.className += (document.documentElement.className !== undefined) ? " touch" : "touch";
       } else {
-        document.documentElement.className += (document.documentElement.className != undefined) ? " no-touch" : "no-touch";
+        document.documentElement.className += (document.documentElement.className !== undefined) ? " no-touch" : "no-touch";
       }
     </script>
     

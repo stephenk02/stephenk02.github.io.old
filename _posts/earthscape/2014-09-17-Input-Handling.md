@@ -12,7 +12,7 @@ The Vita has four shape buttons, two shoulder buttons, start/select buttons, a D
 
 Starting today I worked specifically on the touch screen controls, implementing an InputHandler class for both touch input and mouse input. I chose to do this to simplify things later on, an example of code shows what I mean:
 
-{% highlight C# %}
+{% highlight c# linenos=table %}
 static public bool IsPressed() {
 #if PSM
     return (TouchPanel.GetState().Where(touchLocation => touchLocation.State 
