@@ -14,9 +14,8 @@ layout: default
     <div class="date"> {{ post.date | date: "%B %e, %Y" }} </div>
   
     <p>{{ post.excerpt }}</p>
-  
-    <span class="disqus-comment-count" data-disqus-url="3pills.github.io/{{ post.url }}"> <!-- Count will be inserted here --> </span>
-    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}_identifier">0 Comments</a>
+    
+    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"><span class="disqus-comment-count" data-disqus-url="{{ site.baseurl }}{{ post.url }}"></span></a>
   </article>
   <br>
   {% endif %}

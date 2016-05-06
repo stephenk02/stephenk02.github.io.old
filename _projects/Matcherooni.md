@@ -9,7 +9,12 @@ engine: <a href="http://www.cocos2d-x.org/wiki/Cocos2d-JS">Cocos2D-JS</a>
 desc: <p> A simple match the shapes game inspired by Tetris and Columns, made for a university project. Has the nice gimmick of having each block be comprised of popular Twitch emotes.Developed entirely in JavaScript using the Cocos2D HTML5 framework, this game is completely browser-based and a decent bit of fun.</p><p>Because it is browser based, I have set it up for all to play, right <a href="/projects/Matcherooni">here</a> on this website!</p>
 ---
 
-{% include cocos2d.html %}
+<div class="cocos2d" align="center">
+  <canvas id="gameCanvas" width="480" height="720"></canvas>
+  <script src="/cocos2d.js"></script>
+  <noscript>Please enable JavaScript to view this Cocos2D project.</noscript>
+</div>
+
 <h4 style="text-align:center;">This game tracks location for use in-game. This data is not stored or used for any other purposes.</h4>
 <hr>
 <h3>Controls</h3>

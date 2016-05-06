@@ -5,13 +5,12 @@ layout: default
 <article class="post">
   <h1>{{ page.title }} </h1>
   <div class="date">
-    <a href="/{{ site.baseurl }}blogs/{{ page.category }}">{{ site.cleancategories[page.category] }} Blog</a> | 
-    {{ page.date | date: "%B %e, %Y" }}
+    <a href="/{{ site.baseurl }}blogs/{{ page.category }}">{{ site.cleancategories[page.category] }} Blog</a> | {{ page.date | date: "%B %e, %Y" }}
   </div>
   
   <div class="entry">
     {{ content }}
   </div>
-</article>
 
-{% include disqus.html %}
+  {% include disqus.html %}
+</article>
