@@ -1,5 +1,5 @@
 ---
-title: Google Glasses with Google Nexus
+title: Google Cardboard with Google Nexus
 tags: post
 category: researchblog
 layout: post
