@@ -1,5 +1,5 @@
 ---
-title: Phaser Represent
+title: Phaser 2D Sprite Palettes
 tags: post
 category: webgame
 layout: post
