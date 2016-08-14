@@ -1,28 +1,23 @@
-﻿Stephen Koren
-www.stephenkoren.net • stephenkoren7@gmail.com
+Stephen Koren
+www.stephenkoren.net | stephenkoren7@gmail.com
 Education
-________________
-
 
 Canberra Institute of Technology / Academy of Interactive Entertainment (2014 - Present), Sydney, NSW
 Bachelor of Games and Virtual Worlds - Programming
-* Focus on mathematics and business surrounding games.
-* Learned about Agile methodology within the games development environment.
-* Learned about quality management in games.
-* Studied UML implementation within technical documentation
-* Participated in multiple mock games development projects with other studying programmers, as well as studying artists and designers.
-* Adhered to iterative development cycles during projects with team meetings throughout each group project, akin to Agile development.
-* Game Physics programming.
-
+- Focus on mathematics and business surrounding games.
+- Studied the various development methodologies within the games development environment.
+- Learned the quality assurance processes applied in development environments.
+- Participated in multiple mock games development projects with other studying programmers, as well as studying artists and designers. 
+- Created UML adherent technical documentation within projects.
+- Adhered to iterative development cycles during projects with team meetings throughout each group project, akin to agile development.
+- Applied various mathematical techniques and algorithms to fully realise game environments.
 
 Skills
-________________
 
-
-Languages: C++, C#, GLSL, JavaScript, Python, Lua
-Frameworks / APIs: OpenGL, PhysX, XNA, MonoGame
+Languages: C++, C#, GLSL, HTML5, JavaScript, LUA, PHP, Python
+Frameworks / APIs: Flask, Laravel, MonoGame, OpenGL, Phaser, PhysX, XNA
 Operating Systems: Windows
-Software: 
-* IDEs: Visual Studio ‘12 - ‘15, MonoDevelop, PSM SDK
-* Version Control: Perforce, git
-* Game Engines: Unity, Source
+Software Experience: 
+- IDEs: MonoDevelop, NVidia PhysX, PSM SDK, Visual Studio '12 - '15
+- Version Control: Perforce, git
+- Game Engines: Unity, Source

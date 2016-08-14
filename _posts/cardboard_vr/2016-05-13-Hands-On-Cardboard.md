@@ -1,7 +1,7 @@
 ---
 title: Hands On Cardboard
 tags: post
-category: researchblog
+category: cardboard_vr
 layout: post
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Considering Google Cardboard
 tags: post
-category: researchblog
+category: cardboard_vr
 layout: post
 comments: true
 ---

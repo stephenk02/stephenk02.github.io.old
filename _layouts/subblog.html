@@ -15,7 +15,7 @@ layout: default
   
     <p>{{ post.excerpt }}</p>
     
-    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">0 Comments</a>
+    <a href="{{ site.baseurl }}{{ post.url }}#comments"><span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}">0</span> Comments</a>
   </article>
   <br>
   {% endif %}

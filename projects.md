@@ -7,7 +7,7 @@ permalink: /projects/
 <div>
   {% for project in site.projects reversed %}
     <h3 class="entry-title">{{ project.title }}</h3>
-    <p class="date">{{ project.date | date: "%B %e, %Y" }}</p>
+    <p class="date">Last Updated: {{ project.date | date: "%B %e, %Y" }}</p>
     {% if project.language %} 
       <p class="languages">Languages Used: {{ project.language }}</p>
     {% endif %}

@@ -1,7 +1,7 @@
 ---
 title: Google Cardboard with Google Nexus
 tags: post
-category: researchblog
+category: cardboard_vr
 layout: post
 comments: true
 ---

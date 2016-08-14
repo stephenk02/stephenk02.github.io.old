@@ -1,7 +1,7 @@
 ---
 title: Recruiting and Planning
 tags: post
-category: researchblog
+category: cardboard_vr
 layout: post
 comments: true
 ---
