@@ -11,7 +11,7 @@ permalink: /blogs/
 	{% assign sorted_posts = category[1] | reversed %}
 	{% assign last_post = category[1] | last %}
 
-	<section class="blog">
+	<div class="blog">
 		<div class="blog-header">
 			<h3><a href="{{ site.baseurl }}/blogs/{{ name }}"> {{ site.cleancategories[name] }} </a> <small class="date"> - Started {{ last_post.date | date: "%B %e, %Y" }}</small></h3>
 			
@@ -35,6 +35,6 @@ permalink: /blogs/
 	    {% endfor %}
 	    {% if forloop.last != true %} <hr> {% endif %}
 		</div>
-	</section>
+	</div>
 {% endfor %}
 </div>
