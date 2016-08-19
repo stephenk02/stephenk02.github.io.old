@@ -22,7 +22,10 @@ html {
 body {
   margin: 0px;
   height: 100%;
-  background: #171717;
+  background: -webkit-linear-gradient(#222, #111) no-repeat center center fixed;
+  background: -o-linear-gradient(#222, #111) no-repeat center center fixed;
+  background: -moz-linear-gradient(#222, #111) no-repeat center center fixed;
+  background: linear-gradient(#222, #111) no-repeat center center fixed;
   font: 14px/1.5 "Trebuchet MS", sans-serif;
   color: #ddd;
 }
@@ -252,17 +255,19 @@ h5 {
   margin: 0px 0px;
 }
 
-p + h3 {
-  margin-top: 18px;
-}
-
-p + h4 {
-  margin-top: 16px;
+h2 + hr { 
+  margin-top: 10px;
 }
 
 p {
   padding: 0px 0px;
   color: #ccc;
+  & + h3 {
+    margin-top: 18px;
+  }
+  & + h4 {
+    margin-top: 16px;
+  }
 }
 
 ul {
@@ -335,12 +340,26 @@ a {
   text-align: center;
   padding: 3px 24px;
   max-width: 1200px!important;
-  height: 52px;
   background-color: #111;
   border: 1px solid #333;
   border-top: 0px;
   //border-left: 0px;
   //border-right: 0px;
+}
+
+.footer-copyright {
+  color: #777;
+  line-height: 40px;
+}
+
+.footer-copyright > a {
+  color: #975;
+  &:hover {
+    color: #ca9;
+  }
+  &:focus {
+    color: #ca9;
+  }
 }
 
 a.kinder-surprise {
