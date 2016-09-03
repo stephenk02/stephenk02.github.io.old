@@ -2,8 +2,8 @@
 title: Research Blog
 date: 03-04-2016
 layout: subblog
-subblog: cardboard_vr
+subblog: researchdev
 comments: false
-permalink: blogs/cardboard_vr/
+permalink: blogs/researchdev/
 ---
 
