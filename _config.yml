@@ -47,14 +47,14 @@ cleancategories:
   general: General
   webgame: Web-based Game
   cardboard_vr: Cardboard VR
-  researchdev: R&D  
+  neural_research: Neural Research 
 
 categorydesc:
   earthscape: Blog for a student group project I was a part of in the first year of my programming degree.
   general: Blog posts on the status of myself and the website as a whole.
   webgame: Blog for a HTML5 and JavaScript based game which I started during the third year of my programming degree.
   cardboard_vr: Blog for a Virtual Reality game which I started during the third year of my programming degree.
-  researchdev: Blog for research and development into a yet to be decided field as part of the third year of my programming degree.
+  neural_research: Blog for research and development into applying the field of neural networks to independently play Quake.
 
 sass:
   style: :expanded

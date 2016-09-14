@@ -1,7 +1,7 @@
 ---
 title: The Neural Connection
 tags: post
-category: researchdev
+category: neural_research
 layout: post
 comments: true
 ---
