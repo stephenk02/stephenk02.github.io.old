@@ -6,9 +6,9 @@ layout: post
 comments: true
 ---
 
-<p>Considering the various problems with motion controls and VR movement, I've decided to go full steam with a bluetooth controlled VR game, in order to maximise player agency within the game. I've settled on a sci-fi tank type game, with weapon fire and movement done via the controller, and looking done with the Cardboad peripheral. With this in mind, I'll be working towards this type of game for my project.</p>
+Considering the various problems with motion controls and VR movement, I've decided to go full steam with a bluetooth controlled VR game, in order to maximise player agency within the game. I've settled on a sci-fi tank type game, with weapon fire and movement done via the controller, and looking done with the Cardboad peripheral. With this in mind, I'll be working towards this type of game for my project.
 
-<p>As such, I've also started the documentation for my project. For this, I've been looking at various different examples of documentation. Those provided by my teach were of primary interest, but I've also cross-referenced these with other documents on the web, looking for common sections and anything else I could incorporate. Because I've been focusing so much on documentation, this post is fairly dry for content, unfortunately. :(</p>
+As such, I've also started the documentation for my project. For this, I've been looking at various different examples of documentation. Those provided by my teach were of primary interest, but I've also cross-referenced these with other documents on the web, looking for common sections and anything else I could incorporate. Because I've been focusing so much on documentation, this post is fairly dry for content, unfortunately. :(
 
 <h4>Sources</h4>
 <ul class="sources">

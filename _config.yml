@@ -33,6 +33,8 @@ baseurl: ""
 
 permalink: /blogs/:categories/:title/
 
+excerpt_seperator: "{% assign end_excerpt = true %}"
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
