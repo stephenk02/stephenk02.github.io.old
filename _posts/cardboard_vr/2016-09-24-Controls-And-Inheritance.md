@@ -1,5 +1,5 @@
 ---
-title: Controls & Inheritance
+title: Controls and Inheritance
 tags: post
 category: cardboard_vr
 layout: post
