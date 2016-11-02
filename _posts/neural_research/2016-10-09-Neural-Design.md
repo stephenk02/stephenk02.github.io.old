@@ -19,7 +19,7 @@ For SethBling's MarI/O, how the problem space is represented in two dimensions f
 Well, why does it have to be 3D? I mean, the game is 3D, sure, but why can't we break down what the player is seeing into a flat representation? Through use of trace lines from the player's point of view, this could be possible. The graphic below demonstrates what I mean.
 
 <img src="{{site.baseurl}}/images/neural_research/quake_input_proposal_v1.png" alt="Demonstration of potential Input layer in Quake." class="img-responsive post-image"/>
-<p class="post-image-caption">A grid of input neurons for quake, overlaid onto a scene within the game.</p>
+<p class="post-image-caption">A grid of input neurons for Quake, overlaid onto a scene within the game.</p>
 
 The grid overlaid on the image above is how I think the neural input should be represented in the game. The color of the box represents what the trace has 'seen', with red being an enemy, white being walls, blue being ground and orange being the ceiling. The red dot represents the point that the trace samples. With the use of tracing lines, each neuron in the grid can receive information on what is in the direct centre of it. The large size of each neuron could lead to some minor inaccuracies but this could be adjusted by increasing the 'resolution' of the grid. Ultimately this will allow the AI to receive information on what is in the scene, from walls to enemies to pickup items.
 
@@ -29,6 +29,8 @@ A quick thought about storing information about walls: would it just be better t
 
 <h4>The Output Layer</h4>
 Output is not as complicated, but it needs to be detailed at the very least. Once again referring to MarI/O, a game output layer usually contains the controller input that the console can accept. The keyboard is fine to represent, because it's just some buttons, but how should the mouse view be represented? I think that the best way to feed input through the mouse would be to simply feed a positive or negative value for the x / y axis view movement, ignoring the angle that the player is currently facing and only looking to modify it to see a result. The network should be able to track how feeding each input modifies the sensory data.
+
+In any case, this will all take some experimentation to lock down. Hopefully we can see how it looks in the weeks to come!
 
 <h4>Sources</h4>
 <ul class="sources">
