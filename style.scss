@@ -39,7 +39,7 @@ body {
   margin: 0px auto;
   padding: 24px 18px;
   max-width: 1200px!important;
-  min-height: 680px;
+  min-height: 700px;
   background: #1d1d1d;
   position: relative;
   width: 100%;
@@ -527,6 +527,12 @@ img {
 
 .blog-header > h3 {
   margin-bottom: 4px;
+}
+
+.blog-desc {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #eee;
 }
 
 .blog-post > h4 {

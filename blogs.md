@@ -5,17 +5,17 @@ permalink: /blogs/
 ---
 
 <div>
-{% assign sorted_cats = site.categories | sort %}
-{% for category in sorted_cats %}
+{% assign sorted_cats = site.categories %}
+{% for category in sorted_cats reversed %}
 	{% assign name = category[0] %}
-	{% assign sorted_posts = category[1] | reversed %}
+	{% assign sorted_posts = category[1] %}
 	{% assign last_post = category[1] | last %}
 
 	<div class="blog">
 		<div class="blog-header">
 			<h3><a href="{{ site.baseurl }}/blogs/{{ name }}"> {{ site.cleancategories[name] }} </a> <small class="date"> - Started {{ last_post.date | date: "%B %e, %Y" }}</small></h3>
 			
-		    <p class="desc"> {{ site.categorydesc[name] }} </p>
+		    <p class="blog-desc"> {{ site.categorydesc[name] }} </p>
 		</div>
 
 		<div class="blog-posts">
